@@ -1,52 +1,25 @@
 <template>
-<div class="header">
-  <el-menu
-    :default-active="activeIndex"
-    class="el-menu-demo"
-    mode="horizontal"
-    @select="handleSelect"
-  >
-    <el-menu-item index="1">处理中心</el-menu-item>   
-    <el-menu-item index="2">我的工作台</el-menu-item>             
-    <!-- <el-submenu index="2">
-    <template slot="title">我的工作台</template>
-    <el-menu-item index="2-1">选项1</el-menu-item>
-    <el-menu-item index="2-2">选项2</el-menu-item>
-    <el-menu-item index="2-3">选项3</el-menu-item>
-    <el-submenu index="2-4">
-      <template slot="title">选项4</template>
-    
-    </el-submenu>
-    </el-submenu>-->
-    <el-menu-item index="3">消息中心</el-menu-item>
-    <el-menu-item index="4">
-      <!-- <a href="https://www.ele.me" target="_blank"> -->
-      订单管理
-      <!-- </a> -->
-    </el-menu-item>
-  </el-menu>
+  <div class="tophead">
+    <div class="logo"><a href="/">杨青</a></div>
+    <div id="mnav">
+      <ul>
+        <li><a href="/">网站首页</a></li>
+        <li><a href="/">关于我</a></li>
+        <li><a href="/">模板分享</a></li>
+        <li><a href="/">学无止境</a></li>
+        <li><a href="/">慢生活</a></li>
+        <li><a href="/">留言</a></li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      activeIndex: "1",
-      activeIndex2: "1"
-    };
-  },
-  methods: {
-    handleSelect(key, keyPath) {
-      console.log(key, keyPath);
-    }
-  }
-};
-</script>
-<style scoped>
-.el-menu-demo{
-float:right,
-margin-right=20px
-}
 
+</script>
+
+<style scoped>
+.logo{
+  width: 100px;
+}
 </style>
